@@ -132,11 +132,3 @@ galleryModal.addEventListener('click', (e) => {
     galleryModal.style.display = 'none';
   }
 });
-
-
-
-
-
-
-
-

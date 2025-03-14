@@ -306,50 +306,7 @@
     animation: fadeIn 0.5s ease;
   }
   
-  /* Project Gallery Section */
-  .gallery {
-    padding: 60px 0;
-    background: #fff;
-    text-align: center;
-  }
-  .gallery h2 {
-    font-family: var(--font-secondary);
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-  }
-  .gallery-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  .gallery-item {
-    flex: 0 1 200px;
-    overflow: hidden;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  .gallery-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  .gallery-item:hover {
-    transform: scale(1.05);
-  }
-  .gallery-modal-content {
-    padding: 0;
-    background: none;
-    box-shadow: none;
-  }
-  .gallery-modal-content img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  /* Testimonials Section */
+  /* Testimonials Section - Enhanced Style */
   .testimonials {
     padding: 60px 0;
     background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
@@ -406,6 +363,49 @@
   .carousel-controls button:hover {
     background: var(--secondary-color);
     transform: scale(1.05);
+  }
+  
+  /* Project Gallery Section */
+  .gallery {
+    padding: 60px 0;
+    background: #fff;
+    text-align: center;
+  }
+  .gallery h2 {
+    font-family: var(--font-secondary);
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  .gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .gallery-item {
+    flex: 0 1 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .gallery-item:hover {
+    transform: scale(1.05);
+  }
+  .gallery-modal-content {
+    padding: 0;
+    background: none;
+    box-shadow: none;
+  }
+  .gallery-modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
   }
   
   /* Contact Section (Styled to Match the Site) */
@@ -471,11 +471,11 @@
     font-size: 0.9rem;
   }
   
-  /* Back-to-Top Button */
+  /* Back-to-Top Button (Moved to Left Side) */
   .back-to-top {
     position: fixed;
     bottom: 30px;
-    right: 30px;
+    left: 30px; /* Changed from right to left */
     background: var(--primary-color);
     color: #fff;
     padding: 10px 15px;
@@ -573,10 +573,9 @@
     }
   }
   
-  
-  
-  
-  
-  
-  
+  /* Additional Override for Tawk.to Widget (if needed) */
+  #tawkchat-container {
+    right: auto !important;
+    left: 0 !important;
+  }
   
